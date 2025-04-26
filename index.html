@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listo - List, shop, done.</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripts/template.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    
+    <header>Listo</header>
+
+    <main>
+        <!-- INPUT -->
+        <section class="top-content-layer">
+            <input 
+                onclick="addProduct(this.value)"
+                type="text" 
+                placeholder="Produkt eingeben..."
+            >
+        </section>
+
+        <!-- SHOPPING LIST -->
+        <section id="list" class="mid-content-layer">
+            <!-- Rendering List-Items... -->
+        </section>
+
+        <!-- ADD BUTTON -->
+        <section class="bottom-content-layer">
+            <button>Hinzufügen</button>
+        </section>
+    </main>
 </body>
 </html>
